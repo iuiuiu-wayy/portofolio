@@ -1,2 +1,2 @@
-# portofolio
+# Portofolio
 Personal portofolio web 
