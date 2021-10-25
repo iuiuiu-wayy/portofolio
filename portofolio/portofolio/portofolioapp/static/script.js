@@ -8,13 +8,13 @@ particlesJS("particles-js", {
       }
     },
     "color": {
-      "value": "#FF9800"
+      "value": "#9797a4"
     },
     "shape": {
       "type": "star",
       "stroke": {
         "width": 0,
-        "color": "#FF9800"
+        "color": "#9797a4"
       },
       "polygon": {
         "nb_sides": 22.5
@@ -48,7 +48,7 @@ particlesJS("particles-js", {
     "line_linked": {
       "enable": true,
       "distance": 100,
-      "color": "#FF9800",
+      "color": "#9797a4",
       "opacity": 0.8,
       "width": 1.5
     },
@@ -108,13 +108,36 @@ particlesJS("particles-js", {
   },
   "retina_detect": true
 });
-var count_particles, stats, update;
-update = function() {
-  stats.begin();
-  stats.end();
-  if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
-    count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+// var count_particles, stats, update;
+// update = function() {
+//   stats.begin();
+//   stats.end();
+//   if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+//     count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+//   }
+//   requestAnimationFrame(update);
+// };
+// requestAnimationFrame(update);
+
+
+// $( document ).ready(function(){
+//   $(".button-collapse").sideNav({ 
+//       closeOnClick: true});
+//   $('.scrollspy').scrollSpy();
+// });
+
+var lastScrollTop;
+
+window.addEventListener('scroll',function(){
+  navbar = document.querySelector('.navbar');
+  if(window.scrollY > 0){
+    navbar.classList.add('nav--show')
+    console.log(window.scrollY)
   }
-  requestAnimationFrame(update);
-};
-requestAnimationFrame(update);
+  else{
+    navbar.classList.remove('nav--show')
+    console.log('top page')
+
+    
+  }
+});

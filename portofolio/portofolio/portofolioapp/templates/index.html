@@ -3,13 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <title>:)</title>
-  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css'>
-<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'>
-
-<link rel='stylesheet' href='https://cdn.materialdesignicons.com/1.3.41/css/materialdesignicons.min.css'>
-{% load static %}
-<link rel="stylesheet" href="{% static 'style.css' %}">
+  {% comment %} <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css'>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'>
+  
+  <link rel='stylesheet' href='https://cdn.materialdesignicons.com/1.3.41/css/materialdesignicons.min.css'> {% endcomment %}
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.css'>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'style.css' %}">
 
 </head>
 <body>
@@ -17,6 +18,28 @@
 <html>
 
 <body>
+
+  <!--Navigation-->
+  <div class="navbar">
+    <nav id="navbar_shadow" class="default_color" role="navigation">
+        <div class="container">
+            <div class="nav-wrapper">
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <ul id="nav-mobile" class="side-nav">
+                    <li><a href="#portofolio">Portfolio</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+            </div>
+        </div>
+    </nav>
+  </div>
+
   <div class="global-overlay">
     <div id="particles-js"></div>
     <div class="overlay skew-part"></div>
@@ -26,12 +49,12 @@
   <section id="left-side">
     <div class="content">
       <h1 class="text-intro opacity-1">
-					Hello there, <br>I'm Imam Wahyu Amanullah</h1>
-      <h2 class="text-intro opacity-1">This is my personal website</b> <br>Feel free to look aroung</h2>
+					Hello there, <br>I'm Wahyu</h1>
+      <h2 class="text-intro opacity-1">This is my personal website</b> <br>Feel free to look around</h2>
     </div>
 
     <!-- Social icons -->
-    <div class="social-icons">
+    {% comment %} <div class="social-icons">
       
       <a href="https://www.facebook.com/ec2ainun" target="_blank"><i class="fa fa-facebook"></i></a>
       <a href="https://twitter.com/ec2ainun" target="_blank"><i class="fa fa-twitter"></i></a>
@@ -40,14 +63,157 @@
       <a href="https://id.linkedin.com/in/mochamad-ainun-najib-97120885" target="_blank"><i class="fa fa-linkedin"></i></a>
       <a href="https://codepen.io/ec2ainun/" target="_blank"><i class="mdi mdi-codepen"></i></a>
       <a href="https://www.freecodecamp.com/geins4869" target="_blank"><i class="mdi mdi-fire"></i></a>
-    </div>
+    </div> {% endcomment %}
   </section>
+
+  <!--portofolio-->
+  <div id="portofolio" class="section scrollspy">
+      <div class="container">
+          <div class="row">
+              <div  class="col s12">
+                  <h2 class="center header header2_text"> Hi, my name is Muh Ibnu Habil Hanafi. This is my first portfolio design to complete a challenge from <span class="header2_span"> freecodecamp.</span> </h2>
+              </div>
+
+              <div class="col s12 m12 l12">
+                  <div class="center portrait">
+                      <i class="material-icons">portrait</i>
+                      <h5>User Experience</h5>
+                      <p class="light center">I am a Linux enthusiast, and now i'm working on Palm Oil Company as a Technician. As a technician, my job is writting a code with CodeIgniter framework and also handling Linux Servers.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <!--Work-->
+<div class="section scrollspy" id="work">
+    <div class="container">
+        <h2 class="header title_text">Work </h2>
+        <div class="row">
+            <div class="col s12 m4 l4">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="http://i64.tinypic.com/eu1xsm.png">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">QA E-Form<i class="material-icons right">more_vert</i></span>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">QA E-Form <i class="material-icons right">close</i></span>
+                        <p>We are still working on it. The app based on CodeIgniter</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4 l4">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="http://i67.tinypic.com/9prmme.png">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Monitoring Server <i class="material-icons right">more_vert</i></span>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Monitoring Server<i class="material-icons right">close</i></span>
+                        <p>Monitoring tool for my server is Nagios.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4 l4">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="http://www.ingelook.com/wp-content/themes/mrtailor/images/empty_cart.png">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Coming soon <i class="material-icons right">more_vert</i></span>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Coming soon <i class="material-icons right">close</i></span>
+                        <p>Design progress.</p>
+                    </div>
+                </div>
+            </div>
+          
+        </div>
+    </div>
+</div>
+
+
+  <!--Footer-->
+  <footer id="contact" class="page-footer default_color scrollspy">
+      <div class="container">  
+          <div class="row">
+              <div class="col l6 s12">
+                  <form class="col s12" action="#" method="post">
+                      <div class="row">
+                          <div class="input-field col s6">
+                              <i class="material-icons prefix white-text">account_circle</i>
+                              <input id="icon_prefix" name="name" type="text" class="validate white-text">
+                              <label for="icon_prefix" class="white-text">First Name</label>
+                          </div>
+                          <div class="input-field col s6">
+                              <i class="material-icons prefix white-text">email</i>
+                              <input id="icon_email" name="email" type="email" class="validate white-text">
+                              <label for="icon_email" class="white-text">Email</label>
+                          </div>
+                          <div class="input-field col s12">
+                              <i class="material-icons prefix white-text">mode_edit</i>
+                              <textarea id="icon_prefix2" name="message" class="materialize-textarea white-text"></textarea>
+                              <label for="icon_prefix2" class="white-text">Message</label>
+                          </div>
+                          <div class="col offset-s7 s5">
+                              <button class="btn waves-effect waves-light black darken-1" type="submit">Submit
+                                  <i class="material-icons right">send</i>
+                              </button>
+                          </div>
+                      </div>
+                  </form>
+              </div>
+              <div class="col l3 s12">
+                  <h5 class="white-text">Freecodecamp Challenge</h5>
+                  <ul>
+                      <li><a class="white-text" href="https://www.freecodecamp.com/nubilfi">Profile</a></li>
+                      <li><a class="white-text" href="https://codepen.io/nubilfi">Tool</a></li>
+                      <li><a class="white-text" href="https://gitter.im/FreeCodeCamp/FreeCodeCamp">Chat</a></li>
+                  </ul>
+              </div>
+              <div class="col l3 s12">
+                  <h5 class="white-text">Social</h5>
+                  <ul>
+                      <li>
+                          <a class="white-text" href="https://www.facebook.com/noehack">
+                              <i class="small fa fa-facebook-square white-text"></i> Facebook
+                          </a>
+                      </li>
+                      <li>
+                          <a class="white-text" href="https://www.twitter.com/nubilfi">
+                              <i class="small fa fa-twitter-square white-text"></i> Twitter
+                          </a>
+                      </li>
+                      <li>
+                          <a class="white-text" href="https://github.com/nubilfi">
+                              <i class="small fa fa-github-square white-text"></i> Github
+                          </a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      <div class="footer-copyright default_color">
+          <div class="container">
+              Written and code by <a class="white-text" href="https://freecodecamp.com/nubilfi">Muh Ibnu Habil Hanafi</a>. Material CSS from <a class="white-text" href="http://materializecss.com/">materializecss</a>
+          </div>
+      </div>
+  </footer>
+
 </body>
 
 </html>
 <!-- partial -->
   <script src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script>
   <script  src={% static 'script.js' %}></script>
+
+  <script src='https://code.jquery.com/jquery-2.1.1.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.js'></script>
 
 </body>
 </html>

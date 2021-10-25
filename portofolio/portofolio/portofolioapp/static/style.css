@@ -118,7 +118,7 @@ table {
 
 body {
   /* background: #000000; */
-  background: url("pic2.jpg") no-repeat center center fixed;
+  background: url("pic3.jpg") no-repeat center center fixed;
   /*background-image: url("//unsplash.it/1900/1200?image=786");755,724*/
   /* background-image: url("pic3.jpg") no-repeat center center fixed; */
   -webkit-background-size: cover;
@@ -279,7 +279,7 @@ h6 {
 }
 
 .global-overlay {
-  position: fixed;
+  position: relative;
   top: 0;
   height: 100%;
   width: 100%;
@@ -287,7 +287,7 @@ h6 {
 }
 
 .overlay {
-  position: fixed;
+  position: relative;
   overflow: hidden;
   top: 0;
   left: -50%;
@@ -311,7 +311,7 @@ h6 {
 }
 
 #left-side {
-  position: fixed;
+  position: absolute;
   left: 0;
   top: 0;
   width: 50%;
@@ -325,7 +325,7 @@ h6 {
 }
 
 #left-side .content {
-  position: absolute;
+  position: relative;
   z-index: 0;
   left: 0;
   padding: 0;
@@ -471,7 +471,7 @@ h6 {
     max-width: 50%;
   }
   #left-side {
-    position: relative;
+    position: absolute;
     width: 100%;
     height: auto;
     padding: 100px 0 150px;
@@ -660,4 +660,97 @@ h6 {
   #subscribe p.notify-valid {
     font-size: 12px;
   }
+}
+
+
+/* Custom Stylesheet */
+
+/*Sizes:
+    tiny: 1rem
+    small: 2rem
+    medium: 4rem
+    large: 6rem
+*/
+
+
+.default_color {
+  background-color: #009688 !important
+}
+
+
+#portofolio, #work, #contact {
+  padding-top: 4rem;
+}
+
+#header-color {
+  min-height: 632px;
+  max-height: 864px;
+  position: relative;
+  background-color: #9797a4;
+}
+
+#navbar_shadow {
+  box-shadow: none !important;     
+}
+
+
+.text_header {
+  padding: 15% 0;
+  font-size: 6.0em;
+  font-weight: 100;
+  color:white;
+}
+
+/*.text_h {
+  padding: 15% 0;
+  font-size: 6.0em;
+}
+*/
+@media only screen and (max-width: 480px) {
+  .text_header {
+      padding: 4% 0;
+      font-size: 5em;
+      font-weight: 100;
+      color: white;
+  }
+}
+ 
+.header2_text { 
+  font-weight: 100;margin-bottom: 4%; 
+  line-height: 4.5rem;
+}
+   
+.header2_span {
+  font-weight: 300;color: #009688;
+}
+
+.title_text {
+  color: #009688;
+}   
+
+.portrait i {
+  color: #009688;
+  font-size: 7rem;
+  display: block;
+}
+
+.img-border {
+  border-radius: 50%;
+  border-color: white;
+  border-style: solid;
+}
+
+.brand-logo {
+  position: absolute;
+  color: #fff;
+  display: inline-block;
+  font-size: 2.1rem;
+  font-style: normal;
+  font-weight: 100;
+  padding: 0;
+  letter-spacing: 7px;
+}
+
+.page-footer {
+  margin-top: 0px !important;
 }
