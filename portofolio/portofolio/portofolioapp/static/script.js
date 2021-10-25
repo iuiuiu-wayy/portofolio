@@ -129,9 +129,10 @@ particlesJS("particles-js", {
 var lastScrollTop;
 
 window.addEventListener('scroll',function(){
-  navbar = document.querySelector('.navbar');
-  if(window.scrollY > 0){
+  navbar = document.querySelector('.navbar_shadow');
+  if(window.scrollY > window.screen.availHeight -50){
     navbar.classList.add('nav--show')
+    // console.log('top page')
     console.log(window.scrollY)
   }
   else{

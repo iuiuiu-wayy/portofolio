@@ -689,10 +689,22 @@ h6 {
   background-color: #9797a4;
 }
 
-#navbar_shadow {
-  box-shadow: none !important;     
+.navbar_shadow {
+  height: 50px;
+  position : fixed;
+  /* display: none; */
+  box-shadow: none !important;
+  transform: translateY(-50px);
+  transition: transform 0.5s;
+
 }
 
+.nav--show{
+  display: block;
+  transition: transform 0.5s;
+
+  transform: translateY(0px);
+}
 
 .text_header {
   padding: 15% 0;
