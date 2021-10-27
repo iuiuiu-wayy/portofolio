@@ -130,7 +130,7 @@ var lastScrollTop;
 
 window.addEventListener('scroll',function(){
   navbar = document.querySelector('.navbar_shadow');
-  if(window.scrollY > window.screen.availHeight -50){
+  if(window.scrollY > window.screen.availHeight - 100){
     navbar.classList.add('nav--show')
     // console.log('top page')
     console.log(window.scrollY)
@@ -138,7 +138,12 @@ window.addEventListener('scroll',function(){
   else{
     navbar.classList.remove('nav--show')
     console.log('top page')
-
-    
   }
+});
+
+$(function() {
+  $('a[href*=#]').on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+  });
 });
