@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>:)</title>
-  {% comment %} <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css'>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+  {% comment %} <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css'>
   <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'>
   
   <link rel='stylesheet' href='https://cdn.materialdesignicons.com/1.3.41/css/materialdesignicons.min.css'> {% endcomment %}
@@ -41,36 +41,38 @@
     </nav>
   </div> {% endcomment %}
 
-  <nav class="navbar navbar-toggleable-md fixed-top navbar_shadow">
-  <div class="container">
-      
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav mr-auto">
-          
-        </ul>
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-          
-          <li class="nav-item social-menu">
-            <a href=""><i class="fa fa-2x fa-facebook-official" aria-hidden="true"></i></a> <a href=""><i class="fa fa-2x fa-instagram" aria-hidden="true"></i></a> <a href=""><i class="fa fa-2x fa-twitter-square" aria-hidden="true"></i></a> <a href=""><i class="fa fa-2x fa-google-plus-square" aria-hidden="true"> </i></a>
-          </li>
-        </ul>
-      </div>
-  </div>
+    <nav class="navbar navbar-toggleable-md fixed-top navbar_shadow">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Imam Wahyu Amanullah</a>
+            </div>
+            
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                {% comment %} <ul class="navbar-nav mr-auto">
+                    
+                </ul> {% endcomment %}
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="nav-link" href="#about">About me</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    {% comment %} <li class="nav-item social-menu">
+                    <a href=""><i class="fa fa-2x fa-facebook-official" aria-hidden="true"></i></a> <a href=""><i class="fa fa-2x fa-instagram" aria-hidden="true"></i></a> <a href=""><i class="fa fa-2x fa-twitter-square" aria-hidden="true"></i></a> <a href=""><i class="fa fa-2x fa-google-plus-square" aria-hidden="true"> </i></a>
+                    </li> {% endcomment %}
+                </ul>
+            </div>
+        </div>
     </nav>
 
   <div class="global-overlay">
@@ -85,10 +87,8 @@
 					Hello there, <br>I'm Wahyu</h1>
       <h2 class="text-intro opacity-1">This is my personal website</b> <br>Feel free to look around</h2>
     </div>
-
     <!-- Social icons -->
     {% comment %} <div class="social-icons">
-      
       <a href="https://www.facebook.com/ec2ainun" target="_blank"><i class="fa fa-facebook"></i></a>
       <a href="https://twitter.com/ec2ainun" target="_blank"><i class="fa fa-twitter"></i></a>
       <a href="https://www.instagram.com/ec2ainun/" target="_blank"><i class="mdi mdi-instagram"></i></a>
@@ -100,28 +100,112 @@
   </section>
 
   <section id="section07" class="demo">
-  <a href="#portofolio"><span></span><span></span><span></span>Scroll</a>
+  <a href="#about"><span></span><span></span><span></span>Scroll</a>
 </section>
 
   <!--portofolio-->
-  <div id="portofolio" class="section scrollspy">
-      <div class="container">
-          <div class="row">
-              <div  class="col s12">
-                  <h2 class="center header header2_text"> Hi, my name is Muh Ibnu Habil Hanafi. This is my first portfolio design to complete a challenge from <span class="header2_span"> freecodecamp.</span> </h2>
-              </div>
-
-              <div class="col s12 m12 l12">
-                  <div class="center portrait">
-                      <i class="material-icons">portrait</i>
-                      <h5>User Experience</h5>
-                      <p class="light center">I am a Linux enthusiast, and now i'm working on Palm Oil Company as a Technician. As a technician, my job is writting a code with CodeIgniter framework and also handling Linux Servers.</p>
-                  </div>
-              </div>
-          </div>
+<!--About-->
+<div id="about">
+  <div class="bg-overlay">
+    {% comment %} <div class="container"> {% endcomment %}
+      <div class="text-center vertical-center">
+          {% comment %} <h1 class="home-heading-text">Hi</h1> {% endcomment %}
+ {% comment %}          <img src="https://www.dropbox.com/s/w8wy4lh2h31wgl4/photo_2016-02-24_16-09-22.jpg?raw=1" alt="Imam Wahyu Amanullah" class="img-circle img-responsive center-img" width="150px" height="150px"/> {% endcomment %}
+         <img src="{% static 'profilpic.jpg' %}" alt="Imam Wahyu Amanullah" class="img-circle img-responsive center-img" width="150px" height="150px"/>
+            <h2>Imam Wahyu Amanullah</h1>
+          <p class="about-me-desc">
+            A 26 years old male programmer from West Nusa Tenggara, Indonesia. Have been working on various projects related High performance computing, automated prediction system, data visualization, desktop application, and web application.
+          </p>  
       </div>
+    {% comment %} </div> {% endcomment %}
   </div>
+</div>
+<!--/about-->
 
+<!--About-->
+<div id="experience">
+  
+  <div class="bg-overlay">
+    <h1> Work Experience </h1>
+    <section class="timeline">
+        <div class="container">
+            <div class="timeline-item">
+                <div class="timeline-img"></div>
+                <div class="timeline-content js--fadeInLeft">
+                    <h2>Freelance Programmer</h2>
+                    <h3>@ Climatology Lab., Department of Geophysichs and Meteorology, IPB University <br> 
+                    Anydesk | Bash Command Line Interface | Paralel Computing | Linux Fedora | Network Attached Storage </h3>
+                    {% comment %} <h3></h3> {% endcomment %}
+                    <div class="date">OCT 2021 - Present</div>
+                    <p>- Mainatained an automated weather prediction system</p>
+                    <p>- Installed several new computers to existing system to improve computation performance </p>
+                    {% comment %} <a class="bnt-more" href="javascript:void(0)">More</a> {% endcomment %}
+                </div>
+            </div> 
+
+            <div class="timeline-item">
+                <div class="timeline-img"></div>
+                <div class="timeline-content js--fadeInRight">
+                    <h2>Web Developer</h2>
+                    <h3>@ Direktorat Publikasi Ilmiah dan Informasi Strategis IPB <br>
+                    Python : Dash, Pandas, Flask, NLTK, Numpy | CSS | Git | Heroku </h3>
+                    <div class="date">SEP 2021</div>
+                    <p>Developed web-based user interface for Direktorat Publikasi Ilmiah dan Informasi Strategis (DPIS) IPB University to manage Sustainable Development Goals (SDGS) model.</p>
+                    {% comment %} <a class="bnt-more" href="javascript:void(0)">More</a> {% endcomment %}
+                </div>
+            </div>   
+
+            <div class="timeline-item">
+                <div class="timeline-img"></div>
+                <div class="timeline-content js--fadeInLeft">
+                    <div class="date">JUL 2021 - SEP 2021</div>
+                    <h2>Programming Assistant</h2>
+                    <h3>@ Climate Resilient and Inclusive Cities (CRIC)<br>
+                    Google Collaboration | Python : Rioarray, Geopandas, Matplotlib | SiBiaS</h3>
+                    <p>Gave training to stakeholders in 10 cities regarding climate projection data visualization on Google Collaboration as a part of Climate Resilient and Inclusive Cities (CRIC) Climate Adaptation Program</p>
+                </div>
+            </div>   
+
+            <div class="timeline-item">
+                <div class="timeline-img"></div>
+                <div class="timeline-content js--fadeInRight">
+                    <h2>Data Analyst</h2>
+                    <h3>@ Direktorat Publikasi Ilmiah dan Informasi Strategis IPB <br>
+                    Ptyhon : Nltk, Regex, Tensorflow, Sklearn, Pandas, Jupyter Notebook</h3>
+                    <div class="date">NOV - DEC 2020</div>
+                    <p>Build a model which able to estimate the linkage between Sustainable Development Goals and the given text input</p>
+                    {% comment %} <a class="bnt-more" href="javascript:void(0)">More</a> {% endcomment %}
+                </div>
+            </div>   
+
+            <div class="timeline-item">
+                <div class="timeline-img"></div>
+                    <div class="timeline-content js--fadeInLeft">
+                    <h2>Software Engineer</h2>
+                    <h3>@ Climatology Lab., Department of Geophysics and Meteorology, IPB <br>
+                    Anaconda | Python : Tkinter, Netcdf, Matplotlib </h3>
+                    <div class="date">SEP 2019</div>
+                    <p>Develop a desktop application as an utility app which able to visualize and do simple calculation for climate prediction model result</p>
+                    {% comment %} <a class="bnt-more" href="javascript:void(0)">More</a> {% endcomment %}
+                </div>
+            </div>   
+
+            <div class="timeline-item">
+                <div class="timeline-img"></div>
+                <div class="timeline-content js--fadeInRight">
+                    <h2>Software Engineer</h2>
+                    <h3>@ Climatology Lab., Department of Geophysics and Meteorology, IPB <br>
+                    Bash CLI | Weather Research and Forecast (WRF) | Python | NCARG Command Language (NCL), Crontab | Linux Fedora | Network Attached Storage </h3>
+                    <div class="date">JAN 2018 - SEP 2019</div>
+                    <p>Developed an automatic weather prediction system which runs over multiple computers to perform faster computation. </p>
+                    {% comment %} <a class="bnt-more" href="javascript:void(0)">More</a> {% endcomment %}
+                </div>
+            </div>  
+        </div>
+        </section>
+  </div>
+</div>
+<!--/about-->
   <!--Work-->
 <div class="section scrollspy" id="work">
     <div class="container">
@@ -249,6 +333,7 @@
   <script src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script>
 
   <script src='https://code.jquery.com/jquery-2.1.1.min.js'></script>
+  <script src='https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.js'></script>
   <script  src={% static 'script.js' %}></script>
 
