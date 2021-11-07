@@ -194,3 +194,9 @@ window.addEventListener('scroll',function(){
 //     $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
 //   });
 // });
+
+
+// projects scripts
+// $('#slideshow').carousel({
+//   interval: 5000
+// });
