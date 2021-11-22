@@ -1111,12 +1111,12 @@ h6 {
 }
 #project h1 {
   text-align: center;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
 }
 
 .wrapper {
   max-width: 1200px;
-  margin: 15px auto;
+  margin: 15%;
   position: relative;
 }
 
@@ -1262,7 +1262,7 @@ article img {
 }
 
 #slide5:checked ~ .slider-prev-next-control label:nth-child(1)::after, #slide4:checked ~ .slider-prev-next-control label:nth-child(5)::after, #slide3:checked ~ .slider-prev-next-control label:nth-child(4)::after, #slide2:checked ~ .slider-prev-next-control label:nth-child(3)::after, #slide1:checked ~ .slider-prev-next-control label:nth-child(2)::after {
-  content: "";
+  content: ">";
   padding-left: 15px;
 }
 
@@ -1279,7 +1279,7 @@ article img {
 }
 
 #slide1:checked ~ .slider-prev-next-control label:nth-child(5)::after, #slide5:checked ~ .slider-prev-next-control label:nth-child(4)::after, #slide4:checked ~ .slider-prev-next-control label:nth-child(3)::after, #slide3:checked ~ .slider-prev-next-control label:nth-child(2)::after, #slide2:checked ~ .slider-prev-next-control label:nth-child(1)::after {
-  content: "";
+  content: "<";
   padding-left: 8px;
 }
 

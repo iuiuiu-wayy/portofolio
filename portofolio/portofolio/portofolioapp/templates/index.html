@@ -223,23 +223,34 @@
       <article>
         {% comment %} <div class="info top-left">
           <h3>Malacca</h3></div> {% endcomment %}
-        <div class="container project_container nowrap">
+        <div class="container project_container nowrap center-block">
             <div class="row">
                 <div class='col-10 project_title'>
                     <h1> Covid & air pollutant monitoring dashboard (Thesis project)  </h1>
                 </div>
             </div>
             <div class="row">
-                <div class="col-xs-4">
+                <div class="col-xs-2">
+                </div>
+                <div class="col-xs-8 " >
+                    <img src="{% static 'projectthesis.png' %}" class="img-thumbnail center-block" alt="Responsive image" />
+                </div>
+            </div>
+
+            <div class="row" align="center-block">
+                <div class="col center-block" >
                     <p>Monitoring dashboard is developed for final year master project. This dashboard is designed 
                     to collect Covid19, air pollutant, and weather data</p>
-                </div>                
-
-                <div class="col-xs-8">
-                    <img src="{% static 'projectthesis.png' %}" class="img-thumbnail" alt="Responsive image" />
+                    <br>
                 </div>
-
-
+            </div>
+            <div class="row" align="align-items-end">        
+                <div class="col-xs-2">
+                    <a href="https://github.com/iuiuiu-wayy/CovidPollutantMonitoring" target="_blank">Github</a>
+                </div> 
+                <div class="col-xs-2">
+                    <a href="https://covidpollutantdashboard.herokuapp.com/" target="_blank"> Web App </a>
+                </div>
             </div>
         </div>
         {% comment %} <img src="https://farm9.staticflickr.com/8059/28286750501_dcc27b1332_h_d.jpg" /> {% endcomment %}
