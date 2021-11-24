@@ -15,11 +15,12 @@
   <link rel="stylesheet" href="{% static 'style.css' %}">
   
 </head>
-<body>
-<!-- partial:index.partial.html -->
-<html>
 
 <body>
+<!-- partial:index.partial.html -->
+{% comment %} <html> {% endcomment %}
+
+{% comment %} <body> {% endcomment %}
 
 
   <!--Navigation-->
@@ -113,14 +114,14 @@
         <img src="{% static 'profilpic.jpg' %}" alt="Imam Wahyu Amanullah" class="img-circle img-responsive center-img" width="150px" height="150px"/>
         <h2>Imam Wahyu Amanullah</h1>
         <p class="about-me-desc">
-           A 26 years old male programmer from West Nusa Tenggara, Indonesia. Have been working on various projects related High performance computing, automated prediction system, data visualization, desktop application, and web application.
+          A 26 years old male programmer from West Nusa Tenggara, Indonesia. Have been working on various projects related High performance computing, automated prediction system, data visualization, desktop application, and web application.
         </p>  
       </div>
     </div>
   </div>
   <!--/about-->
 
-<!--experience-->
+  <!--experience-->
   <div id="experience">
     
     <div class="bg-overlay">
@@ -276,146 +277,27 @@
               </div>
             </div>
           </div>
-        <div>
-        {% comment %} </div> {% endcomment %}
-      </div> <!--/container-->
-      
-      
-    </div><!--/bg-overlay-->
-  </div>
-  <!--/project-->
 
-
-  <!--Work-->
-<div class="section scrollspy" id="work">
-    <div class="container">
-        <h2 class="header title_text">Work </h2>
-        <div class="row">
-            <div class="col s12 m4 l4">
-                <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="http://i64.tinypic.com/eu1xsm.png">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">QA E-Form<i class="material-icons right">more_vert</i></span>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">QA E-Form <i class="material-icons right">close</i></span>
-                        <p>We are still working on it. The app based on CodeIgniter</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col s12 m4 l4">
-                <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="http://i67.tinypic.com/9prmme.png">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Monitoring Server <i class="material-icons right">more_vert</i></span>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Monitoring Server<i class="material-icons right">close</i></span>
-                        <p>Monitoring tool for my server is Nagios.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col s12 m4 l4">
-                <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="http://www.ingelook.com/wp-content/themes/mrtailor/images/empty_cart.png">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Coming soon <i class="material-icons right">more_vert</i></span>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Coming soon <i class="material-icons right">close</i></span>
-                        <p>Design progress.</p>
-                    </div>
-                </div>
-            </div>
-          
-        </div>
-    </div>
-</div>
-
-
-  <!--Footer-->
-  <footer id="contact" class="page-footer default_color scrollspy">
-      <div class="container">  
           <div class="row">
-              <div class="col l6 s12">
-                  <form class="col s12" action="#" method="post">
-                      <div class="row">
-                          <div class="input-field col s6">
-                              <i class="material-icons prefix white-text">account_circle</i>
-                              <input id="icon_prefix" name="name" type="text" class="validate white-text">
-                              <label for="icon_prefix" class="white-text">First Name</label>
-                          </div>
-                          <div class="input-field col s6">
-                              <i class="material-icons prefix white-text">email</i>
-                              <input id="icon_email" name="email" type="email" class="validate white-text">
-                              <label for="icon_email" class="white-text">Email</label>
-                          </div>
-                          <div class="input-field col s12">
-                              <i class="material-icons prefix white-text">mode_edit</i>
-                              <textarea id="icon_prefix2" name="message" class="materialize-textarea white-text"></textarea>
-                              <label for="icon_prefix2" class="white-text">Message</label>
-                          </div>
-                          <div class="col offset-s7 s5">
-                              <button class="btn waves-effect waves-light black darken-1" type="submit">Submit
-                                  <i class="material-icons right">send</i>
-                              </button>
-                          </div>
-                      </div>
-                  </form>
-              </div>
-              <div class="col l3 s12">
-                  <h5 class="white-text">Freecodecamp Challenge</h5>
-                  <ul>
-                      <li><a class="white-text" href="https://www.freecodecamp.com/nubilfi">Profile</a></li>
-                      <li><a class="white-text" href="https://codepen.io/nubilfi">Tool</a></li>
-                      <li><a class="white-text" href="https://gitter.im/FreeCodeCamp/FreeCodeCamp">Chat</a></li>
-                  </ul>
-              </div>
-              <div class="col l3 s12">
-                  <h5 class="white-text">Social</h5>
-                  <ul>
-                      <li>
-                          <a class="white-text" href="https://www.facebook.com/noehack">
-                              <i class="small fa fa-facebook-square white-text"></i> Facebook
-                          </a>
-                      </li>
-                      <li>
-                          <a class="white-text" href="https://www.twitter.com/nubilfi">
-                              <i class="small fa fa-twitter-square white-text"></i> Twitter
-                          </a>
-                      </li>
-                      <li>
-                          <a class="white-text" href="https://github.com/nubilfi">
-                              <i class="small fa fa-github-square white-text"></i> Github
-                          </a>
-                      </li>
-                  </ul>
-              </div>
+            <div class='col-10 project_title'>
+              <h1> Southeast Asia Climate-Ocean Web App (SEACOAPP) </h1>
+            </div>
           </div>
-      </div>
-      <div class="footer-copyright default_color">
-          <div class="container">
-              Written and code by <a class="white-text" href="https://freecodecamp.com/nubilfi">Muh Ibnu Habil Hanafi</a>. Material CSS from <a class="white-text" href="http://materializecss.com/">materializecss</a>
-          </div>
-      </div>
-  </footer>
-
-</body>
-
-</html>
-<!-- partial -->
+          
+        {% comment %} <div> {% endcomment %}
+        </div>
+      </div> <!--/container-->
+    </div><!--/bg-overlay-->
   <script src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script>
 
   <script src='https://code.jquery.com/jquery-2.1.1.min.js'></script>
   <script src='https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.js'></script>
   <script  src={% static 'script.js' %}></script>
+  </div>  <!--/project-->
+
+  <!-- partial -->
+
 
 </body>
 </html>
