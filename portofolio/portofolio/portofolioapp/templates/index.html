@@ -64,11 +64,11 @@
                     <li class="nav-item">
                     <a class="nav-link" href="#project">Project</a>
                     </li>
-                    <li class="nav-item">
+                    {% comment %} <li class="nav-item">
                     <a class="nav-link" href="#">Pricing</a>
-                    </li>
+                    </li> {% endcomment %}
                     <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="#contact">Contact</a>
                     </li>
                     {% comment %} <li class="nav-item social-menu">
                     <a href=""><i class="fa fa-2x fa-facebook-official" aria-hidden="true"></i></a> <a href=""><i class="fa fa-2x fa-instagram" aria-hidden="true"></i></a> <a href=""><i class="fa fa-2x fa-twitter-square" aria-hidden="true"></i></a> <a href=""><i class="fa fa-2x fa-google-plus-square" aria-hidden="true"> </i></a>
@@ -206,13 +206,12 @@
   </div>
   <!--/experience-->
 
-
   <!--portofolprojectio-->
   <div id="project">
     <div class="bg-overlay">
 
       <div class='container'>
-        <h1> Cool projects </h1>
+        <h1> Cool Projects </h1>
         <div class="project_container">
 
           <div class="row">
@@ -260,7 +259,6 @@
                 <div class='item', id='portofolio_project_screenshot'>
                 </div>
               </a>
-
               <div class="technology_font"> 
                 Python : Django | HTML | CSS | JS | Git | Heroku
               </div>
@@ -283,11 +281,51 @@
               <h1> Southeast Asia Climate-Ocean Web App (SEACOAPP) </h1>
             </div>
           </div>
-          
+
+          <div class="row">
+            <div class="col-xs-1">
+            </div>
+            <div class="col-xs-10">
+              <a href="https://github.com/iuiuiu-wayy/SEACOAPP", target="_blank">
+                <div class='item', id='seacoapp_project_screenshot'>
+                </div>
+              </a>
+              <div class="technology_font">
+                Python : Dash, Netcdf, Plotly, Pandas, Rioxarray
+              </div>
+              <p>Downloader and Corrector for sea-level rise climate change projections in the Indonesian region. Data are grabbed from Badan Informasi dan Geospasial (BIG).
+              </p>
+              <div class="technology_font">
+                Links : 
+                  <a href="https://github.com/iuiuiu-wayy/SEACOAPP", target="_blank">
+                    Github,
+                  </a> 
+                  <a href="https://www.researchgate.net/publication/354856731_SEA-COApp_A_web_app_to_analyze_download_and_visualize_Regional_Ocean_Model_ROM_datasets_in_Southeast_Asia", target="_blank">
+                    Publication
+                  </a>
+              </div>
+            </div>
+          </div>
+
         {% comment %} <div> {% endcomment %}
         </div>
       </div> <!--/container-->
     </div><!--/bg-overlay-->
+  </div>
+
+  <div id="contact">
+    <div class="bg-overlay">
+      <div class="container">
+        <h1> My Contact </h1>
+        <div class="row">
+          <div class="contact_container">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script>
 
   <script src='https://code.jquery.com/jquery-2.1.1.min.js'></script>
