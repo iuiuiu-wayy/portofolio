@@ -211,7 +211,7 @@ h6 small {
 h1 {
   font-size: 40px;
   font-family: Montserrat, "Helvetica Neue", "Lucida Grande", Arial, Verdana, sans-serif;
-  font-weight: 700;
+  font-weight: 200;
 }
 
 h2 {
@@ -860,7 +860,7 @@ h6 {
 }
 
 .navbar {
-  background-color: #d9f1ff;
+  background-color: #b3e2ff;
   color: #444;
   z-index: 2;
   /* border-bottom: thin solid #989898; */
@@ -870,6 +870,8 @@ h6 {
 }
 .navbar a{
   margin-bottom:-23px;
+  color : #12232d;
+  font-size: 18px;
   /* margin-top: -6px; */
 }
 .navbar a:hover {
@@ -1049,7 +1051,7 @@ h6 {
 .timeline-img {
   width: 30px;
   height: 30px;
-  background: #3F51B5;
+  background: #b3e2ff;
   border-radius: 50%;
   position: absolute;
   left: 50%;
@@ -1246,13 +1248,17 @@ article img {
 
 /* Contact styles */
 #contact{
+  padding-top: 30px;
   background-size: cover;
+  background-color: #b3e2ff;
   width: 100%;
   overflow-x: hidden;
+  text-align: center;
 }
 #contact h1 {
   text-align: center;
   padding-bottom: 20px;
+  color: #12232d;
 }
 .contact_container {
   width: 100%;
@@ -1260,4 +1266,44 @@ article img {
   padding: 30px;
   background: #d9f1ff;
   margin-bottom: 200px;
+}
+
+.footer {
+  padding-top: 1%;
+  padding-bottom: 1%;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+.social-icon {
+  color: black;
+  padding: 30px;
+}
+
+.fa-instagram:hover {
+  color: rgb(207, 27, 12)
+}
+
+.fa-github:hover {
+  color: #313335;
+}
+
+.fa-linkedin:hover {
+  color: #0077b5;
+}
+
+.ai-google-scholar:hover {
+  color: rgb(60, 68, 194);
+}
+
+.fa-envelope:hover {
+  color: #ea4335;
+}
+
+.copywrite {
+  color: black;
+  font-size: 0.875rem;
+  margin: 0; 
+  padding-bottom: 5px;
 }
